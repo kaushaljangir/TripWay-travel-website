@@ -36,3 +36,14 @@ img {
     width: 100%;
     display: block;
 }
+
+
+/* <---------------------------------- Navbar -------------------------------> */
+
+.navbar {
+    width: 100%;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
