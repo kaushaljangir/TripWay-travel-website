@@ -47,6 +47,11 @@ img {
     display: block;
 }
 
+.container {
+    width: min(1200px, 90%);
+    margin: auto;
+}
+
 
 /* <---------------------------------- Navbar -------------------------------> */
 
@@ -187,8 +192,8 @@ img {
 .hero {
     min-height: 100vh;
     position: relative;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
 
     background:
@@ -238,6 +243,11 @@ img {
     margin-bottom: 25px;
 }
 
+.hero .container {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-tag i {
     color: var(--accent);
 }
@@ -277,7 +287,7 @@ img {
     z-index: 10;
 
     margin-top: 0;
-    padding: 0 7%;
+    padding: 0 2.5%;
 }
 
 .search-box {
@@ -344,3 +354,4 @@ img {
 .search-btn:hover {
     transform: scale(1.06);
 }
+
