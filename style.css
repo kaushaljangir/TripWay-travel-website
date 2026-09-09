@@ -355,3 +355,132 @@ img {
     transform: scale(1.06);
 }
 
+/* <---------------------------------- DESTINATIONS -------------------------------> */
+
+.destinations {
+    padding: 110px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-family: var(--heading);
+    font-size: clamp(40px, 5vw, 54px);
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 18px;
+}
+
+.section-subtitle {
+    max-width: 600px;
+    color: var(--text-soft);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.view-link {
+    color: var(--accent);
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.destination-card {
+    height: 430px;
+    border-radius: 22px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: 0.5s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-6px);
+}
+
+.destination-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.05) 65%
+    );
+}
+
+.destination-info {
+    position: absolute;
+    z-index: 2;
+
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+}
+
+.destination-info span {
+    color: #d4ddd9;
+    font-size: 13px;
+}
+
+.destination-info h3 {
+    font-family: var(--heading);
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.destination-info p {
+    color: #d7ddda;
+    font-size: 13px;
+}
+
+.destinations .container {
+    width: 86%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.destination-bali {
+    background-image: url("images/bali.avif");
+}
+
+.destination-swiss {
+    background-image: url("images/swiss.avif");
+}
+
+.destination-dubai {
+    background-image: url("images/dubai.avif");
+}
+
+.destination-gateway {
+    background-image: url("images/gateway.avif");
+}
