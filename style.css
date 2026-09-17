@@ -763,6 +763,37 @@ img {
     margin-bottom: 20px;
 }
 
+/* <---------------------------------- STATS -------------------------------> */
+
+.stats {
+    padding: 65px 7%;
+    background: #0b1815;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.stats-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    font-family: var(--heading);
+    font-size: 48px;
+    color: var(--accent);
+    margin-bottom: 6px;
+}
+
+.stat-text {
+    color: var(--text-soft);
+    font-size: 13px;
+}
+
 /* <---------------------------------- FOOTER -------------------------------> */
 .footer {
     background: #060d0b;
