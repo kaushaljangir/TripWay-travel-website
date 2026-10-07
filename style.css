@@ -995,6 +995,51 @@ img {
         display: none;
     }
 
+
+    /* Mobile Side Menu */
+    .navbar {
+        z-index: 1002;
+    }
+
+    .nav-links.mobile-active {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        width: 75%;
+        height: 100vh;
+
+        background: #08110f;
+        padding: 100px 30px 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+
+        border-left: 1px solid var(--border);
+        z-index: 1003;
+
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.35);
+    }
+
+
+    /* Background Overlay */
+    .mobile-overlay {
+        position: fixed;
+        inset: 0;
+
+        background: rgba(0, 0, 0, 0.55);
+        background: rgba(0, 0, 0, 0.7);
+
+        z-index: 1000;
+        display: none;
+    }
+
+    .mobile-overlay.active {
+        display: block;
+    }
+
     .menu-btn {
         display: block;
     }
