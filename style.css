@@ -937,6 +937,19 @@ img {
     color: var(--accent);
 }
 
+/* <---------------------------------- SCROLL REVEAL -------------------------------> */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* <---------------------------------- MEDIA QUERIES -------------------------------> */
 
